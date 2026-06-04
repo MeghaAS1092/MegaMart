@@ -4,7 +4,11 @@ import { useState } from "react";
 import { FaEnvelope, FaLock, FaEyeSlash, FaEye } from "react-icons/fa";
 
 export default function LoginForm() {
+
+  const [username, setUsername] = useState();
+  const [password, setPassword] = useState();
   const [showPassword, setShowPassword] = useState(false);
+  
   return (
     <div>
       <h1 className="text-2xl font-semibold">Welcome back!</h1>
