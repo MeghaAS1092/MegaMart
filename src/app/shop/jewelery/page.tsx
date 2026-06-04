@@ -14,7 +14,6 @@ export default function jewelery() {
   }
 
   const [products, setProducts] = useState<Product[]>([]);
-  const [cartCount, setCartCount] = useState(0);
 
   useEffect(() => {
     fetch("https://fakestoreapi.com/products")
